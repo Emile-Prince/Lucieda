@@ -1,0 +1,39 @@
+ <!DOCTYPE html>
+ <!--
+ /***********************************************************
+ * Auteur : Prince Tchakala
+ * Date Création : 09-02-2018
+ * Projet : Consultation Exam / Forum
+ * MOE: David Missié
+ * Nom Fichier: Header
+ * rôle : Fichier En tête
+ * Modifier : 14-03-2018
+ *            changement de la variable session
+ *          : 07-06-2018
+ *            changement header
+ ***********************************************************/
+ -->
+
+    <div id="top-nav" class="navbar navbar-inverse navbar-static-top">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">	<span class="icon-toggle"></span>
+            </button><a class="navbar-brand" href="index.php">Lucieda</a>
+        </div>
+
+         <div class="navbar-collapse collapse"> 
+             <ul class="nav navbar-nav pull-right">
+                 <li class="dropdown"> <a class="dropdown-toggle" role="button" data-toggle="dropdown" href="#">
+                 <strong class="">Menu</strong> <span class="caret"></span></a>
+
+                     <ul id="g-account-menu" class="dropdown-menu" role="menu">
+                         <li><a href="{{path('catalogue')}}" class="">Catalogue</a> </li>
+                         <li><a href="{{path('connexion')}}"  class="">Se connecter</a> </li>                         
+                         <li><a href="{{path('about')}}" class="">A propos</a> </li>
+                         <li><a href="{{path('contact')}}" class="">Nous contacter</a> </li>
+                     </ul>
+                 </li>
+             <li><a href="#" class="">#Team242</a>
+             </ul>
+         </div>
+
+    </div>

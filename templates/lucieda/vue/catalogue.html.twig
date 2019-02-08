@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>
+            {% block title %}Lucieda | Catalogue{% endblock %}
+        </title>
+        {% block stylesheets %}
+            <link rel="stylesheet" href="{{ asset('css/header.css') }} ">
+            <link rel="stylesheet" href="{{ asset('css/footer.css') }}">
+            <link rel="stylesheet" href="{{ asset('css/animation.css') }}">
+            <link rel="stylesheet" href="{{ asset('css/font.css') }}">
+            <link rel="stylesheet" href="{{ asset('css/bootstrap.min.css') }}">
+            <link rel="stylesheet" href="{{ asset('css/catalogue.css') }} ">
+        {% endblock %}
+    </head>
+
+    <body>
+
+        <div class="header">
+            {% include 'lucieda/vue/header.html.twig' %}
+        </div>
+
+        <div class="container">
+            {% block body %}
+                <div class="container">
+                    <div class="well well-sm">
+                        <strong>Mode Affichage</strong>
+                        <div class="btn-group">
+                            <a href="#" id="list" class="btn btn-default btn-sm">
+                                <span class="glyphicon glyphicon-th-list"></span>Liste</a>
+                            <a href="#" id="grid" class="btn btn-default btn-sm">
+                                <span class="glyphicon glyphicon-th"></span>Grille</a>
+                        </div>
+                    </div>
+                    <div id="products" class="row list-group">
+                        <div class="item  col-xs-4 col-lg-4">
+                            <div class="thumbnail">
+                                <img class="group list-group-image" src="{{ asset('images/pdf-icon.png') }}" alt=""/>
+                                <div class="caption">
+                                    <h4 class="group inner list-group-item-heading">
+                                        Product title</h4>
+                                    <p class="group inner list-group-item-text">
+                                        Product description... Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
+                                    <div class="row">
+                                        <div class="col-xs-12 col-md-6">
+                                            <a class="btn btn-success" href="http://www.jquery2dotnet.com">Consulter</a>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item  col-xs-4 col-lg-4">
+                            <div class="thumbnail">
+                               <img class="group list-group-image" src="{{ asset('images/pdf-icon.png') }}" alt=""/>
+                                <div class="caption">
+                                    <h4 class="group inner list-group-item-heading">
+                                        Product title</h4>
+                                    <p class="group inner list-group-item-text">
+                                        Product description... Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
+                                    <div class="row">
+                                        <div class="col-xs-12 col-md-6">
+                                            <a class="btn btn-success" href="http://www.jquery2dotnet.com">Consulter</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item  col-xs-4 col-lg-4">
+                            <div class="thumbnail">
+                                <img class="group list-group-image" src="{{ asset('images/pdf-icon.png') }}" alt=""/>
+                                <div class="caption">
+                                    <h4 class="group inner list-group-item-heading">
+                                        Product title</h4>
+                                    <p class="group inner list-group-item-text">
+                                        Product description... Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
+                                    <div class="row">
+                                        <div class="col-xs-12 col-md-6">
+                                            <a class="btn btn-success" href="http://www.jquery2dotnet.com">Consulter</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item  col-xs-4 col-lg-4">
+                            <div class="thumbnail">
+                                <img class="group list-group-image" src="{{ asset('images/pdf-icon.png') }}" alt=""/>
+                                <div class="caption">
+                                    <h4 class="group inner list-group-item-heading">
+                                        Product title</h4>
+                                    <p class="group inner list-group-item-text">
+                                        Product description... Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
+                                    <div class="row">
+                                        <div class="col-xs-12 col-md-6">
+                                            <a class="btn btn-success" href="http://www.jquery2dotnet.com">Consulter</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item  col-xs-4 col-lg-4">
+                            <div class="thumbnail">
+                                <img class="group list-group-image" src="{{ asset('images/pdf-icon.png') }}" alt=""/>
+                                <div class="caption">
+                                    <h4 class="group inner list-group-item-heading">
+                                        Product title</h4>
+                                    <p class="group inner list-group-item-text">
+                                        Product description... Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
+                                    <div class="row">
+                                        <div class="col-xs-12 col-md-6">
+                                            <a class="btn btn-success" href="http://www.jquery2dotnet.com">Consulter</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item  col-xs-4 col-lg-4">
+                            <div class="thumbnail">
+                                <img class="group list-group-image" src="{{ asset('images/pdf-icon.png') }}" alt=""/>
+                                <div class="caption">
+                                    <h4 class="group inner list-group-item-heading">
+                                        Product title</h4>
+                                    <p class="group inner list-group-item-text">
+                                        Product description... Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
+                                    <div class="row">
+                                        <div class="col-xs-12 col-md-6">
+                                            <a class="btn btn-success" href="http://www.jquery2dotnet.com">Consulter</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            {% endblock %}
+        </div>
+
+        <div class="footer">
+           
+        </div>
+
+        {% block javascripts %}
+            <script src="js/jquery.min.js" type="text/javascript"></script>
+            <script src="js/bootstrap.min.js" type="text/javascript"></script>
+            <script src="js/css3-animate-it.js" type="text/javascript"></script>
+            <script src="js/catalogue.js" type="text/javascript"></script>
+        {% endblock %}
+    </body>
+</html>

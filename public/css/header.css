@@ -1,0 +1,36 @@
+/* CSS used here will be applied after bootstrap.css */
+
+.navbar-static-top {
+	margin-bottom:20px;
+}
+
+.bg-grey {
+    background-color: #efefef;
+}
+
+.view-block{
+   display: inline-block;
+   vertical-align:top;
+   margin: 15px;
+  }
+  
+.desktop-view{
+   width:1280px; 
+   max-width:1280px; 
+   height: 800px;
+   max-height: 800px;
+  }
+
+.tablet-view{
+   width:768px; 
+   max-width:768px; 
+   height: 1024px;
+   max-height: 1025px;
+  }
+  
+.mobile-view{
+   width:320px;
+   max-width:320px; 
+   height: 568px;
+   max-height: 568px;
+  }
